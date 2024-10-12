@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 1080px;
+        }
+
+        .topest_bg {
+            display: block;
+            background-image: url(./image/top_bei.jpg);
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+        .topest_bg .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .topest_bg .box .top_nav {
+            flex: 1;
+            position: absolute;
+            right: 0;
+        }
+
+        .topest_bg .box .top_nav span {
+            margin-right: 20px;
+            padding: 5px 6px;
+            cursor: pointer;
+            border-radius: 4px;
+            color: rgb(48, 58, 58);
+        }
+
+        .topest_bg .box .top_nav span:first-child {
+            background-image: url(./image/top_nav_active_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(56, 97, 175);
+        }
+
+        .topest_bg .box .top_nav span:first-child:hover {
+            background-image: url(./image/top_nav_active_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(56, 97, 175);
+        }
+        
+        .topest_bg .box .top_nav span:hover {
+            background-image: url(./image/top_nav_lo.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: rgb(255, 189, 131);
+            padding: 10px;
+        }
+
+        .topest_bg .box .top_nav span:active {
+            color: aquamarine;
+            font-style: italic;
+        }
+
+        .banner img {
+            display: block;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .main_first {
+            display: block;
+            max-width: 100%;
+            background-image: url(./image/img_beij.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-top: -5px;
+        }
+
+        .bx {
+            padding-top: 16px;
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .title {
+            display: flex;
+            color: rgb(73, 70, 70);
+            margin-bottom: 15px;
+        }
+
+        .top .tzg {
+            background-image: url(./image/can.png);
+            background-size: cover;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 10px;
+        }
+
+        .tzg p {
+            font-size: 32px;
+            color: red;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ppwh {
+            position: relative;
+        }
+
+        .ppwh .contant {
+            position: absolute;
+            left: 0;
+            width: 620px;
+            background-image: url(./image/);
+            line-height: 28px;
+            background-color: #ecfffce1;
+            padding: 20px;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .contant p {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .contant p:nth-child(4) {
+            color: rgb(219, 36, 36);
+            font-weight: bold;
+            position: absolute;
+            right: 20px;
+            bottom: -13px;
+            cursor: pointer;
+        }
+
+        .contant p:nth-child(4):active {
+            color: rgb(255, 102, 102);
+        }
+
+        .cptj .top {
+            display: flex;
+            position: relative;
+            border-bottom: 1px solid rgba(110, 107, 107, 0.784);
+        }
+
+        .cptj .top .menu {
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+        }
+
+        .cptj .top .menu span {
+            padding: 6px 12px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 6px;
+        }
+
+        .cptj .top .menu span:hover {
+            background-color: skyblue;
+        }
+
+        .cptj .top .menu span:first-child {
+            background-color: rgb(240, 23, 23);
+            color: bisque;
+            border: none;
+        }
+
+        .cptj .top .menu span:first-child:active {
+            background-color: rgb(240, 23, 23);
+            font-style: normal;
+        }
+
+        .cptj .top .menu span:active {
+            background-color: #beef81;
+            font-style: italic;
+        }
+
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item .box img {
+            display: inline-block;
+            width: 332px;
+            margin-bottom: 5px;
+        }
+
+        .item .box p {
+            margin-bottom: 5px;
+        }
+
+        .item .box {
+            border-bottom: 1px solid rgba(123, 118, 118, 0.708);
+            margin-bottom: 10px;
+        }
+
+        .pxkc_bj {
+            background-image: url(./image/kecheng_02.jpg);
+            background-size: 100% 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topest_bg">
+        <div class="box bx">
+            <div class="logo"><img src="./image/logo.png" alt=""></div>
+            <div class="top_nav">
+                <span>网站首页</span>
+                <span>品牌文化</span>
+                <span>产品中心</span>
+                <span>培训课程</span>
+                <span>新闻中心</span>
+                <span>招商加盟</span>
+                <span>联系我们</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="./image/banner.jpg" alt="">
+    </div>
+
+    <div class="main_first">
+        <div class="ppwh bx">
+            <div class="top">
+                <div class="title">
+                    <div class="tzg">
+                        <p>品</p>
+                    </div>
+                    <div class="r_t">
+                        <h3>品牌文化</h3>
+                        <h5>BRAND CULTURE</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="contant">
+                <p>《黄帝内经》曰：“阳气者，若天与日，失其所，则折寿而不彰。”就是说人体的阳气，就像天上的太阳一样重要。没有了太阳，世界上的万物将无法生存；没有了阳气，人就会减损寿命或夭折，所以人体离不开阳气就像万物离不开太阳一样。
+                </p>
+                <p>《黄帝内经》曰：“阳气者，若天与日，失其所，则折寿而不彰。”就是说人体的阳气，就像天上的太阳一样重要。没有了太阳，世界上的万物将无法生存；没有了阳气，人就会减损寿命或夭折，所以人体离不开阳气就像万物离不开太阳一样。
+                </p>
+                <p>阳气者，若天与日，失其所，则折寿而不彰。阳气者，若天与日，失其所，则折寿而不彰。阳气者，若天与日，失其所，则折寿而不彰。阳气者，若天与日，失其所，则折寿而不彰。</p>
+                <p>查看全部+</p>
+            </div>
+        </div>
+
+        <div class="cptj bx">
+            <div class="top">
+                <div class="title">
+                    <div class="tzg">
+                        <p>产</p>
+                    </div>
+                    <div class="r_t">
+                        <h3>产品推荐</h3>
+                        <h5>PRODUCT</h5>
+                    </div>
+                </div>
+                <div class="menu">
+                    <span>仪器</span>
+                    <span>水果酵素</span>
+                    <span>精华液</span>
+                    <span>按摩膏k</span>
+                    <span>仪器仪器</span>
+                    <span>水果酵素</span>
+                    <span>精华液</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <img src="./image/cp_img.jpg" alt="">
+                    <p>益力舒活按摩膏</p>
+                </div>
+                <div class="box">
+                    <img src="./image/cp_img1.jpg" alt="">
+                    <p>精华液</p>
+                </div>
+                <div class="box">
+                    <img src="./image/cp_img2.jpg" alt="">
+                    <p>益力舒活按摩膏</p>
+                </div>
+                <div class="box">
+                    <img src="./image/cp_img3.jpg" alt="">
+                    <p>水果酵素</p>
+                </div>
+                <div class="box">
+                    <img src="./image/cp_img4.jpg" alt="">
+                    <p>益力舒活按摩膏</p>
+                </div>
+                <div class="box">
+                    <img src="./image/cp_img5.jpg" alt="">
+                    <p>益力舒活按摩膏</p>
+                </div>
+            </div>
+        </div>
+        <div class="pxkc_bj">
+            <div class="pxkc bx">
+                <div class="item">
+                    <div class="box">
+                        <img src="./image/ship_img.jpg" alt="">
+                        <p>养生培训</p>
+                    </div>
+                    <div class="box">
+                        <img src="./image/ship_img1.jpg" alt="">
+                        <p>养生培训</p>
+                    </div>
+                    <div class="box">
+                        <img src="./image/ship_img2.jpg" alt="">
+                        <p>养生培训</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
